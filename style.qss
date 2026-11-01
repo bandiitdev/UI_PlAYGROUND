@@ -1,0 +1,221 @@
+QPushButton {
+    background-color:transparent;
+    color: #222222;
+    width: 120px;height: 25px;
+    border: none;
+    text-align:center;
+}
+QPushButton:hover{
+    Background:#E8E7E2;
+    border: none;
+    border-radius: 10px;
+}
+
+QMainWindow{
+    background-color:#F2F2EE;
+}
+
+#Sidebar{
+    background-color:#DAD8D2;
+    border-radius:20px;
+}
+
+#card_2_settings_page{
+    background-color: #FCFCFA;
+    border: 1px solid #D5D2C5;
+    border-radius: 12px;
+}
+
+
+#card_1_settings_page{
+    background-color: #FCFCFA;
+    border: 1px solid #D5D2C5;
+    border-radius: 12px;
+}
+
+#description_1{
+     color:#222222;
+    font-size: 25px;
+    font-weight: bold;
+    padding-top: 10px;
+}
+
+#description_2{
+    color:#222222;
+    font-weight: bold;
+    font-size: 15px;
+    padding-top: 10px;
+}
+
+#app{
+    color:#222222;
+    font-size: 17px;
+    font-weight: lighter;
+}
+#application_name{
+    color:#222222;
+    font-size: 17px;
+    font-weight: lighter;
+
+}
+
+#card1_top{
+    background-color: #FCFCFA;
+    border: 1px solid #D5D2C5;
+    border-radius: 6px;
+}
+
+#card1_bottom{
+    background-color: #FCFCFA;
+    border: 1px solid #D5D2C5;
+    border-radius: 12px;
+}
+#card2_bottom{
+    background-color: #FCFCFA;
+    border: 1px solid #D5D2C5;
+    border-radius: 12px;
+}
+#card3_bottom{
+    background-color: #FCFCFA;
+    border: 1px solid #D5D2C5;
+    border-radius: 12px;
+}
+
+#welcome_label{
+     color:#222222;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+#welcome_txt{
+    color:#222222;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+#welcome_txt_description1{
+    color:#222222;
+    font-size: 17px;
+}
+
+#welcome_txt_description2{
+    color:#222222;
+    font-size: 17px;
+}
+
+#open_button{
+    background-color:transparent;
+    color: #222222;
+    width: 10px;height: 25px;
+    border: aquamarine;
+    text-align:center;
+}
+#open_button:hover{
+    Background:#E8E7E2;
+    border: none;
+    border-radius: 10px;
+}
+
+#card1_for_ob{
+    background-color: #FCFCFA;
+    border: 1px solid #D5D2C5;
+    border-radius: 12px;
+}
+#txt_for_card1{
+    color:#222222;
+    font-size: 17px;
+}
+
+#txt1_for_card1_bottom{
+    color:#777777;
+    font-size: 20px;
+    font-weight:lighter;
+}
+
+#txt2_for_card1_bottom{
+     color:#222222;
+    font-size: 26px;
+    font-weight: bold;
+}
+
+#card_for_coding_projects{
+    background-color: #FCFCFA;
+    border: 1px solid #D5D2C5;
+    border-radius: 12px;
+}
+
+#project_1{
+     color:#777777;
+     font-weight: bold;
+    font-size: 20px;
+}
+
+#project_2{
+     color:#777777;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+#project_3{
+    color:#777777;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+#project_4{
+    color:#777777;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+
+#txt1_for_card2_bottom{
+    color:#777777;
+    font-size: 20px;
+    font-weight:lighter;
+}
+
+#txt2_for_card2_bottom{
+      color:#222222;
+    font-size: 26px;
+    font-weight: bold;
+}
+
+
+#IT_Page_Card{
+     background-color: #FCFCFA;
+    border: 1px solid #D5D2C5;
+    border-radius: 12px;
+}
+
+
+#IT_PAGE_TXT{
+     color:#222222;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+
+#txt1_for_card3_bottom{
+    color:#777777;
+    font-size: 20px;
+    font-weight:lighter;
+}
+
+#txt2_for_card3_bottom{
+     color:#222222;
+    font-size: 26px;
+    font-weight: bold;
+}
+
+#guitar_card{
+     background-color: #FCFCFA;
+    border: 1px solid #D5D2C5;
+    border-radius: 12px;
+}
+
+#guitar_card_txt{
+    color:#222222;
+    font-size: 26px;
+    font-weight: bold;
+}
