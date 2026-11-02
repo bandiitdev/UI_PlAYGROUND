@@ -32,6 +32,8 @@ class MainWindow(QMainWindow):
         self.sidebar.setMinimumWidth(150)
         self.sidebar.setMaximumWidth(200)
         self.sidebar.show()
+# making a frameless window so it can fit the overall GUI's theme
+        self.setWindowFlag(Qt.WindowType.FramelessWindowHint)
 
 
         #setup Qstackedwidget onto my layout to allow page switching and added it onto my layout(set current widget allows dashboard to be the defaults page shown when opening app)

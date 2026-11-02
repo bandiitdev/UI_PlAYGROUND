@@ -1,6 +1,7 @@
+from PySide6.QtCore import QTimer, Qt
 from PySide6.QtGui import Qt
 from PySide6.QtWidgets import QWidget, QLabel, QHBoxLayout, QFrame, QVBoxLayout, QPushButton
-
+from datetime import datetime
 
 class Dashboard(QWidget):
     def __init__(self):
@@ -8,7 +9,7 @@ class Dashboard(QWidget):
 #establishing main layout and setting content margins up so I can add text up top
         self.widget_main_layout = QVBoxLayout()
         self.setLayout(self.widget_main_layout)
-        self.widget_main_layout.setContentsMargins(20,40,0,0)
+        self.widget_main_layout.setContentsMargins(20,20,0,0)
         self.widget_main_layout.setSpacing(5)
 #creating the cards and the layout for them + naming them to style them up
         self.card1_top= QFrame()
@@ -20,12 +21,18 @@ class Dashboard(QWidget):
         self.card3_bottom = QFrame()
         self.card3_bottom.setObjectName("card3_bottom")
         self.layout_for_bottom_cards= QHBoxLayout()
- # creating the QLabels as the text up top
-        self.welcome_label = QLabel()
-        self.welcome_label.setObjectName("welcome_label")
-        self.welcome_label.setText("Welcome Back,Bandit")
+ # creating the QLabel as the text up top to add date and time & updating spacing
+        self.date_time_label = QLabel()
+        self.date_time_label.setObjectName("welcome_label")
+        self.date_time_label.setContentsMargins(0, 0, 10, 0)
+    #Updating the QLabel that holds current time. The function update_time() is called to display the time when program then I use qtimer to update the time every second
+        self.update_current_time=QTimer()
+        self.update_time()
+        self.update_current_time.timeout.connect(self.update_time)
+        self.update_current_time.setInterval(1000)
+        self.update_current_time.start()
 #adding card widgets to my main layout and the layouts for them + Welcome Label
-        self.widget_main_layout.addWidget(self.welcome_label,0,alignment=Qt.AlignmentFlag.AlignTop)
+        self.widget_main_layout.addWidget(self.date_time_label, 0, alignment=Qt.AlignmentFlag.AlignTop | Qt.AlignmentFlag.AlignRight)
         self.widget_main_layout.addWidget(self.card1_top,1)
         self.widget_main_layout.addLayout(self.layout_for_bottom_cards,1)
 #adding widgets to their own layouts so they can show up how I want it to
@@ -112,6 +119,7 @@ class Dashboard(QWidget):
         self.layout_for_card3_bottom_contents.addStretch()
         self.layout_for_card3_bottom_contents.addWidget(self.card3_button)
 
-
-
-
+    #function for connecting current time so that it updates
+    def update_time(self):
+        self.current_time = datetime.now()
+        self.date_time_label.setText(self.current_time.strftime("%m/%d/%Y\n\n %I:%M:%S"))
