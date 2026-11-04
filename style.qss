@@ -198,24 +198,76 @@ QMainWindow{
 
 #txt1_for_card3_bottom{
     color:#777777;
-    font-size: 20px;
+    font-size:20px;
     font-weight:lighter;
 }
 
 #txt2_for_card3_bottom{
      color:#222222;
-    font-size: 26px;
-    font-weight: bold;
+    font-size:26px;
+    font-weight:bold;
 }
 
 #guitar_card{
-     background-color: #FCFCFA;
-    border: 1px solid #D5D2C5;
-    border-radius: 12px;
+     background-color:#FCFCFA;
+    border:1px solid #D5D2C5;
+    border-radius:12px;
 }
 
 #guitar_card_txt{
     color:#222222;
-    font-size: 26px;
+    font-size:26px;
+    font-weight:bold;
+}
+
+#CustomTitleBar{
+    background-color:#DAD8D2;
+    border-radius:10px;
+}
+
+#central_widget{
+    border-radius:12px;
+    border:2px solid #D5D2C5;
+    background-color: #F2F2EE;
+}
+
+#close_button{
+    width:14px;
+    height:14px;
+    border-radius:7px;
+    border:none;
+    background-color:#E06B63;
+    color:#E06B63;
+
+}
+#close_button:hover{
+    color:black;
     font-weight: bold;
+    font-size:10px;
+}
+#minimize_button{
+    width:14px;
+    height:14px;
+    border-radius:7px;
+    border:none;
+    background-color:#E6C36A;
+    color:#E6C36A;
+}
+#minimize_button:hover{
+    color:black;
+    font-weight: bold;
+    font-size:10px;
+}
+#expand_button{
+    width: 14px;
+    height:14px;
+    border-radius:7px;
+    border:none;
+    background-color:#7FAF8A;
+    color:#7FAF8A;
+}
+#expand_button:hover{
+    color: black;
+    font-weight: bold;
+    font-size:10px;
 }

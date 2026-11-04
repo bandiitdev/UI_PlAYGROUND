@@ -122,4 +122,4 @@ class Dashboard(QWidget):
     #function for connecting current time so that it updates
     def update_time(self):
         self.current_time = datetime.now()
-        self.date_time_label.setText(self.current_time.strftime("%m/%d/%Y\n\n %I:%M:%S"))
+        self.date_time_label.setText(self.current_time.strftime("%m/%d/%Y\n\n  %I:%M:%S"))
