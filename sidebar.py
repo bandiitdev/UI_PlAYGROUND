@@ -30,6 +30,7 @@ class Sidebar(QFrame):
         self.dashboard.setIcon(QIcon("images/house.svg"))
         self.dashboard.setMinimumWidth(75)
         self.dashboard.setMaximumWidth(200)
+
         self.left_side.addWidget(self.dashboard)
 
         self.left_side.addStretch()
